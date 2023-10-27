@@ -26,7 +26,7 @@ class Post(models.Model):
     view_time = models.DateTimeField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    publish_time = models.DateTimeField()
+    publish_time = models.DateTimeField(null=True, blank=True)
     is_published = models.BooleanField(default=False)
 
     def __str__(self):
