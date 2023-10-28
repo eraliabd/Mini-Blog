@@ -17,3 +17,6 @@ class Author(models.Model):
 
     def __str__(self):
         return self.name
+
+    def top_author(self):
+        pass
